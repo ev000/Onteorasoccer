@@ -1,0 +1,280 @@
+
+/*This dictates the space between the edge of the page and the navbar. Which is now set to nothing*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    background-color: dark;
+}
+
+
+
+/*For the Main heading-Onteora Soccer*/
+h1 {  
+    display: flex;
+    padding-bottom: 70px;
+    justify-content: center;
+    position: relative;
+    color: black;
+    z-index: 1;
+    margin: 0;
+    padding: 56px;
+
+  
+}
+
+/*This is for the main part of the navbar*/
+.navbar ul {
+    list-style-type: none;
+    background-color: darkred;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*This is for the words in the navbar*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+   
+}
+/*For the big picture of the team on the home page of the website*/
+.picTeam{
+    width: 50%;
+    height: auto;
+}
+
+/*For the big picture of Sam and Julian on the home page of the webstie*/
+.picSam {
+    float: right;
+    width: 50%;
+    height: 627px;
+    object-fit: cover;
+
+}
+
+/*For the logo of the eagle at the top of the page*/
+.picEagle {
+    position: absolute; top: 0px;    
+    position: absolute; left: 650px;    
+}
+
+
+/*This is so when you hover over any of the words in the navbar it changes color*/
+.navbar a:hover {
+    background-color: grey;
+    color: black
+}
+
+/*This is for the list items*/
+.navbar li {
+    float: left;
+}
+
+/*This is for the margin for the text on the main part of the page*/
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+/*Matches page - for the words DATE and MATCHUP and the boxes that surround them*/
+h2 {
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 20px;
+    line-height: 2.7;
+    letter-spacing: 0.8px;
+    
+}
+/*Matches page - For the heading that holds the words Game schedule*/
+th{
+    border: 2px solid black;
+    color: white
+}
+/*Matches page- THE WHOLE SPACE BEHIND THE TABLE*/
+table {
+    text-align: center;
+    margin: 20px auto;
+    background-color: darkred;
+}
+
+/*Matches page - For all of the table data like the specific dates and matchup*/
+td {
+    border: 2px solid black;
+    width: 300px;
+    background-color: darkred;
+    color: white
+}
+
+/*For the whole table kinda*/
+.container {
+    margin-top: 75px;
+}
+
+/*For the big words on the top of the matches page that say - Game Schedule*/ 
+.gameSchedule {
+    color: white
+}
+
+/*For the whole roster page, the youtuber Tahmid Ahmed was used*/
+/*For the layout and size of the player pictures on the roster page, includes "The Team" heading*/
+.team {
+    position: relative;
+    width: 100%;
+    /*Height of the images on the page of the players - roster page*/
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+/*For the layout and size of the player pictures and words below it on the rostter page, includes "The Team" heading*/
+.team-content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 10rem;
+    text-align: center;
+    margin-top:4rem ;
+   
+    
+}
+/*For the pictures on the roster page*/
+.team-content img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/*The div for the heading and description of the news on the news page */
+.news-heading {
+    margin-top: 25px;
+
+    padding: 20px;
+    position: relative;
+    /*Semi transparent*/
+    background-color: darkred;
+    /*subtle box shadow*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 700px;
+    width: 100%;
+    background-color: rgba(139, 0, 0, 0.7);
+    background: linear-gradient(to bottom, #8B0000, #333333); /* Dark red to dark gray gradient */
+    
+
+
+}
+
+/*For the description of the news*/
+.description-news {
+    font-size: 24px;
+    line-height: 1.5em;
+    padding: 20px 50px;
+    color: white;
+    /*Shadow to make text more legible in front of the image*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*For the heading of the news*/
+.main-news {
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: white;
+        /*Shadow to make text more legible in front of the image*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    
+}
+/*For the big image of Elias in the news page*/
+.elias-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: top;
+    z-index: -1; /* Puts the image behind the text */
+    filter: brightness(70%) saturate(120%);
+    ;
+    
+}
+
+/*For the spacing in the news page*/
+.news-heading h1, .news-heading h3 {
+    margin-bottom: 30px;
+}
+
+/*For the nav bar about the big schedule on the matches page*/
+.navMatch {
+    background-color: grey;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*For the list items in the nav bar above the big schedule on the matches page*/
+.navMatch li {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+
+/*This is for the read more paragraph on the matches page*/
+.read-more-section {
+    background-color: darkred;
+    color: lightgrey;
+
+}
+
+
+/*Changes the appereance of the read more button on the matches page*/
+.read-more-btn {
+    background-color:  #e04000;
+    color: white;
+    border: 1px #e04000;
+    border-radius: 5px; /*Rounds corners*/
+    font-weight: bold;
+    
+}
+
+/*Hides the read more text in the matches page*/
+.read-more-text {
+    display: none;
+}
+
+/*Is essential to display the more info text correctly on the matches page*/
+.read-more-text--show{
+    display: block;
+}
+
+/*This function allows for  the cursor to change wheen hovered over the read more button on the matches page*/
+.read-more-btn:hover {
+    cursor: pointer;
+    background-color: #c03000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+

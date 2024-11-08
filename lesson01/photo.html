@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Standard setup for html, ensures html can use different characters-->
+        <meta charset="UTF-8">
+
+        <!--Standard setup for html, sets the width to match device and ensures that the zoom starts at 100%-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--For the Title on the top of the webpage on the tab-->
+        <title>Onteora Boys Varsity Soccer</title>
+
+        <!--For font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+        
+        <!--Connects html and css-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--For the icon image on the top of the webpage on the tab-->
+        <link rel="shortcut icon" href="images/onteora logo.ico" type="image/x-icon">
+
+
+        <script src="js/main.js" defer></script>
+
+       
+        <!--Main heading on top of the page-->
+        <h1>Onteora Soccer</h1>
+    
+
+        <!--Logo image for the top of the page next to the main title-->
+        <img src="images/Eagle logo.png" alt="Eagle Logo" class="picEagle">
+    
+
+        <!--The nav tag below is for the main nav bar on top of the page -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roster.html">Roster</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="photo.html">Photo Gallery</a></li>
+            </ul>
+        </nav>
+    </head>
+<!--This body tag is for all of the content of the webpage-->
+<body>
+
+    
+
+        <!--Main tag is for the main content of the webpage-->
+        <div id="galleryContent" style="display: none;">
+        <main>
+            
+            <h3>This is the Photo Gallery for the Onteora Eagles Varsity Soccer Team </h3>
+
+            <p> Here, we share moments that go beyond the game—capturing the friendships,
+                 support, and family spirit that make our team so special. Each photo
+                  reflects the laughter, hard work, and memories we've created together. 
+                  Once an Eagle, always an Eagle!</p>
+             
+            <!--Main photos on the page-->
+            <img src="images/photo2.png"class="picSam">
+            <img src="images/photo3.png"class="picSam">
+            <img src="images/photo4.png"class="picSam">
+            <img src="images/photo5.png"class="picSam">
+            <img src="images/photo6.png"class="picSam">
+            <img src="images/photo7.png"class="picSam">
+            <img src="images/photo 15.jpg"class="picSam">
+            <img src="images/photo8.png"class="picSam">
+            <img src="images/photo9.png"class="picSam">
+            <img src="images/photo10.jpg"class="picSam">
+            <img src="images/photo11.jpeg"class="picSam">
+            <img src="images/photo12.jpg"class="picSam">
+            <img src="images/photo 13.jpg"class="picSam">
+            <img src="images/photo 14.jpg"class="picSam">
+            <img src="images/photo15.jpg"class="picSam">
+            <img src="images/royfinal.jpg"class="picSam">
+            <img src="images/photo17.jpg"class="picSam">
+           
+            <script>
+                if (window.location.href.includes("photo.html"))
+                var password;
+                var pass1="elistern";
+                password=prompt('Enter Password To View Page')
+                if (password==pass1) {
+                    alert('Correct password, praise King Eli and Stern. Click ok to enter');
+                    document.getElementById('galleryContent').style.display = 'block';
+                }
+                else {
+                    document.getElementById('galleryContent').style.display = 'none';
+                    alert('Incorrect Password. Hint: Roy Stellavato')
+                }
+                </script>
+
+        </main>
+    </div>
+    </body>
+</html>
